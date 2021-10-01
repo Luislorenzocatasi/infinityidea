@@ -1,0 +1,13 @@
+1.-git init 
+
+    git status (cada vez que haces un comando)
+​
+2 - git add <file.html>
+​
+3- git commit -m "<message>"
+​
+    git push para enviar gi hub reflejado a su respositorio 
+​
+4- git push 'origin/main'
+​
+    origin master 
