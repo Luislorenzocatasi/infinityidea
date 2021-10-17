@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: auto;
+}
+
+body{
+    font-family:sans-serif;
+        
+}
+.contenedor{
+    padding: 120px 0;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: darkmagenta;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+header{
+    width: 100%;
+    height: 600px;
+     background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(imagenes/fondo.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(imagenes/fondo.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+header .Textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.Textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.Textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.ola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/*catalogo*/
+
+.catalogo {
+        background: #f2f2f2;
+}
+.galeria-cat {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-cat {
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.imagen-cat > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.h-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.h-galeria img{
+    width: 50px;
+}
+
+.h-galeria p{
+    color: #fff;
+}
+
+.imagen-cat:hover .h-galeria{
+    transform: scale(1);
+}
+/*comentarios*/
+.cont{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cont .co{
+    background: #4d0686;
+    display: flex;
+    width: 40%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+.cont .co img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;  
+}
+.cont .co > .contenido-co{
+    width: 60%;
+    color: #fff;
+}
+.cont .co> .contenido-co{
+    font-weight: 300;
+    padding-top: 5px;
+}
+/*footer*/
+footer{ 
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: 60px 0 0px 0;
+    overflow: hidden;
+}
+.footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 5px solid #ccc;
+}
+.fo{
+     text-align: center;
+}
+.fo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.fo p{
+    color: #ccc;
+}
+.autores{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: crimson
+}
+@media screen and (max-width:900px){
+    header
+    {
+        background-position: center;
+    }
+
+
+.imagen-cat{
+    width: 44%;
+}
+.cont{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont .co
+    {
+        width: 90%;
+    }
+.cont .co:first-child
+
+    {
+        margin-bottom: 30px
+    }
+}
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+    
+    }
