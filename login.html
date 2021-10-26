@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registrar.css">
+    <title>Registro</title>
+    
+</head>
+<body>
+    
+
+
+    <div class="Nuevo">
+        <img class="logo" src="img.logo/logo.jpg">
+        <h1>Regístrate</h1>
+        <form action="logeo.php" method="POST" enctype="multipart/form-data">
+            <!--Envio URL : txtuser txtemail-->
+            <!--USUARIO-->
+            <label for="txtuser">Usuario</label><br>
+            <input type="text" id="txtuser" name="txtuser" placeholder="Ingrese su Usuario" required><br>
+
+            <!--Contraseña-->
+            <label for="password">Contraseña</label><br>
+            <input type="password" id="password" name="password" placeholder="Escriba su Contraseña" required><br>
+
+            <!--ENVIAR-->
+            <input type="submit" name="" value="Iniciar Sesion"><br>
+
+            <a id="Back" href="index.php">Volver</a><br>
+            <a id="sin contraseña" href="index.php">Olvidaste tu contraseña?</a><br>
+            <a id="Nuevousuario" href="index.php">No tienes una cuenta?</a><br>
+
+        </form>
+    </div>
+
+</body>
+</html>
