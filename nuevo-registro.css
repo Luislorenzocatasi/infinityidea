@@ -1,0 +1,99 @@
+body {
+    background: url(fondo/fondo.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+/*LOGIN*/
+.Nuevo {
+    width: 430px;
+    height: 600px;
+    /*background-image: linear-gradient(350deg, #f0f5f7 0, #c8e2eb 16.67%, #9dcce1 33.33%, #6cb4d8 50%, #2b9cd0 66.67%, #0085c8 83.33%, #0070c1 100%);*/
+    background-image: radial-gradient(circle at 100% 100%, #daffb7 0, #dfffa7 7.14%, #e4f996 14.29%, #e8ef85 21.43%, #ebe373 28.57%, #eed561 35.71%, #f0c64e 42.86%, #f2b53c 50%, #f4a32c 57.14%, #f69221 64.29%, #f8801d 71.43%, #fb6d20 78.57%, #fe5a27 85.71%, #ff4431 92.86%, #ff293d 100%);
+    color: #27AE60;
+    top: 51%;
+    left: 35%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 50px;
+    
+}
+/*IMAGEN*/
+.img {
+    width: 429px;
+    height: 720px;
+    top: 51%;
+    left: 65%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing:border-box;
+    padding: 65px 30px;
+        
+}
+/*AVATAR*/
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: calc(20% - 50px);
+}
+/*TITULO*/
+.Nuevo h2 {
+    margin: 10;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 20px;
+    color: azure;
+}
+/*REGISTRO*/
+.Nuevo label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    font-size: 15;
+}
+.Nuevo input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.Nuevo input[type="text"], .Nuevo input[type="password"], .Nuevo input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #000;
+  font-size: 15px;
+}
+/*BOTON*/
+.Nuevo input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #45B396;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.Nuevo input[type="submit"]:hover {
+  cursor: pointer;
+  background: #308159;
+  color: #000;
+}
+/*LINK*/
+.Nuevo a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: #27AE60;
+}
+.Nuevo a:hover {
+  color: #000;
+}
